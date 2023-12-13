@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://rushii.materii.dev/</id>
+  <title><![CDATA[PandaTech]]></title>
+  <subtitle><![CDATA[A tech blog where I write opinions and helpful articless]]></subtitle>
+  <icon>https://rushii.materii.dev/favicon.png</icon>
+  <link href="https://rushii.materii.dev" />
+  <link href="https://rushii.materii.dev/atom.xml" rel="self" type="application/atom+xml" />
+  <updated>2023-12-13T07:12:31.015Z</updated>
+  <author>
+    <name><![CDATA[CodePanda]]></name>
+  </author>
+</feed>
