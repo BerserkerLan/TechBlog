@@ -61,6 +61,23 @@ declare global {
            * @remarks currently only supports string
            */
           image?: string
+          /**
+           * the background image for post previews
+           * @remarks currently only supports string
+           */
+          previewImage?: string
+          /**
+           * the image used for embeds
+           * only this or embedPreview can be present
+           * @remarks currently only supports string
+           */
+          embedImage?: string
+          /**
+           * the image used for embeds (tiny image)
+           * only this or embedImage can be present
+           * @remarks currently only supports string
+           */
+          embedPreview?: string
           /** enable some advanced features.
            * @property hidden - deprecated, transfer to `unlisted`
            * @property unlisted - hide this post from the homepage and feed.

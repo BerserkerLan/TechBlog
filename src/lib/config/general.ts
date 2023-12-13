@@ -55,14 +55,10 @@ export const head: HeadConfig = {}
 
 export const header: HeaderConfig = {
   nav: [
-    // {
-    //   text: 'Get Started',
-    //   link: '/hello-world'
-    // },
-    // {
-    //   text: 'Elements',
-    //   link: '/hello-world/elements'
-    // }
+    {
+      text: 'GitHub',
+      link: 'https://github.com/BerserkerLan'
+    },
   ]
 }
 
@@ -75,14 +71,19 @@ export const footer: FooterConfig = {
     {
       text: 'Sitemap',
       link: '/sitemap.xml'
+    },
+    {
+      text: "Source code",
+      link: "https://github.com/BerserkerLan/TechBlog"
     }
-  ]
+  ],
+  html: '<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
 }
 
 export const date: DateConfig = {
   locales: 'en-US',
   options: {
-    year: '2-digit',
+    year: 'numeric',
     weekday: 'long',
     month: 'short',
     day: 'numeric'

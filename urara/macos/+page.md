@@ -2,9 +2,8 @@
 title: Why MacOS is still behind - 10 ways it could improve
 summary: We go over the things MacOS still doesn't implement properly, and go over what these are and how they can be improved
 created: 2023-12-08
-image: '/mac-os-bad/mac_os.png'
+image: '/macos/mac_os.png'
 tags: ['Apple', 'MacOS']
-toc: false
 ---
 
 Another Apple hate article? In all fairness, Macs have really improved since they released their M series chips, being an ARM based architecture, they are extremely power efficient and highly suitable for Laptops. With excellent benchmark metrics, Macs are one of the best laptops one can afford at the moment.
