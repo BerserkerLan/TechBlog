@@ -21,9 +21,12 @@
   // specify
   export let title
   export let image
+  export let previewImage
+  export let embedImage
+  export let embedPreview
   export let in_reply_to
   // post
-  let fm = { path, slug, toc, created, updated, published, summary, tags, flags, title, image, in_reply_to }
+  let fm = { path, slug, toc, created, updated, published, summary, tags, flags, title, image, previewImage, embedImage, embedPreview, in_reply_to }
   let post = { type: typeOfPost(fm), ...fm }
 </script>
 
