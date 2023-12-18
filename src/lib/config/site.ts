@@ -4,9 +4,9 @@ export const site: SiteConfig = {
   protocol: import.meta.env.URARA_SITE_PROTOCOL ?? import.meta.env.DEV ? 'http://' : 'https://',
   domain: import.meta.env.URARA_SITE_DOMAIN ?? 'urara-demo.netlify.app',
   title: 'PandaTech',
-  subtitle: 'A tech blog where I write opinions and helpful articless',
+  subtitle: 'A tech blog where I write opinions and helpful articles',
   lang: 'en-US',
-  description: 'Heavily based on Urara Sveltekit',
+  description: 'A tch blog for personal opinions and articles',
   author: {
     avatar: '/assets/pixel_art_typing_panda.jpg',
     name: 'CodePanda',

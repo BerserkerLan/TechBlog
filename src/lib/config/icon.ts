@@ -25,7 +25,7 @@ export const any: { [key: number]: Icon } = {
   }
 }
 
-const githubAvatarUrl = "https://avatars.githubusercontent.com/u/33725716?v=4";
+const githubAvatarUrl = "https://avatars.githubusercontent.com/u/22114667?v=4";
 export const maskable: { [key: number]: Icon } = {
   192: {
     src: `${githubAvatarUrl}&size=192`,
