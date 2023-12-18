@@ -24,14 +24,20 @@
       "purpose": "any"
     },
     {
-      "src": "https://rushii.materii.dev/assets/maskable@192.png",
+      "src": "https://avatars.githubusercontent.com/u/33725716?v=4&size=192",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://rushii.materii.dev/assets/maskable@512.png",
+      "src": "https://avatars.githubusercontent.com/u/33725716?v=4&size=512",
       "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://avatars.githubusercontent.com/u/33725716?v=4&size=1024",
+      "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "maskable"
     }

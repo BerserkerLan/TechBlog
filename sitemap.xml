@@ -10,4 +10,9 @@
       <loc>https://rushii.materii.dev</loc>
     </url>
     
+        <url>
+            <loc>https://rushii.materii.dev/macos</loc>
+            <lastmod>2023-12-18T05:39:37.979Z</lastmod>
+            <priority>0.5</priority>
+        </url>
   </urlset>
