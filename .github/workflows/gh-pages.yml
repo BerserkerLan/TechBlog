@@ -17,7 +17,6 @@ jobs:
         run: |
           curl -L https://raw.githubusercontent.com/pnpm/self-installer/master/install.js | node
           export PATH="$HOME/.pnpm-global/bin:$PATH"
-          echo "::add-path::$HOME/.pnpm-global/bin"
           pnpm --version
 
       - name: Install dependencies
