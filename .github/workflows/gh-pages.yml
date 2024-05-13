@@ -13,6 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install pnpm
+        run: |
+          curl -L https://raw.githubusercontent.com/pnpm/self-installer/master/install.js | node
+          export PATH="$HOME/.pnpm-global/bin:$PATH"
+          echo "::add-path::$HOME/.pnpm-global/bin"
+          pnpm --version
+
       - name: Install dependencies
         run: |
           pnpm install
