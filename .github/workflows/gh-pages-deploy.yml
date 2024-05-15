@@ -2,35 +2,13 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-permissions:
-  contents: write
+    branches: main
+  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install pnpm
-        run: |
-          curl -L https://raw.githubusercontent.com/pnpm/self-installer/master/install.js | node
-          export PATH="$HOME/.pnpm-global/bin:$PATH"
-          pnpm --version
-
-      - name: Install dependencies
-        run: |
-          pnpm install
-          # Install any additional dependencies needed for your project
-
-      - name: Build
-        run: pnpm run build
-        # Modify the build command as needed for your SvelteKit project
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build # The folder the action should deploy.
+  deploy:
+    uses: importantimport/.github/.github/workflows/pnpm-gh-pages.yml@main
+    permissions:
+      contents: write
+    with:
+      publish_dir: build

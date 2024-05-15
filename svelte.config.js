@@ -29,6 +29,9 @@ export default {
       directives: {
         'style-src': ['self', 'unsafe-inline', 'https://giscus.app']
       }
+    },
+    paths: {
+        base: process.env.NODE_ENV === "production" ? "/techblog" : "",
     }
   }
 }
