@@ -2,14 +2,33 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: main
-  workflow_dispatch:
+    branches:
+      - main # Set this to the branch you want to trigger the deployment
 
 jobs:
-  deploy:
-    uses: importantimport/.github/.github/workflows/pnpm-gh-pages.yml@main
-    permissions:
-      contents: write
-    with:
-      publish_dir: build
-      cname: "https://berserkerlan.github.io/"
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Set this to the Node.js version you're using
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build the project
+        run: pnpm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build
