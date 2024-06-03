@@ -12,7 +12,7 @@
     "kit:build": "cross-env NODE_OPTIONS=--max_old_space_size=11474 vite build",
     "dev:parallel": "run-p -r tsc:watch urara:watch \"kit:dev {@} \" --",
     "dev": "npm-run-all -s tsc \"dev:parallel {@} \" --",
-    "build": "vite build",
+    "build": "npm-run-all -s tsc urara:build kit:build clean",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
