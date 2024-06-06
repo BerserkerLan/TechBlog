@@ -7,12 +7,12 @@
     xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
     xmlns:video="https://www.google.com/schemas/sitemap-video/1.1">
     <url>
-      <loc>https://rushii.materii.dev</loc>
+      <loc>https://https://berserkerlan.github.io/techblog/</loc>
     </url>
     
         <url>
-            <loc>https://rushii.materii.dev/macos</loc>
-            <lastmod>2024-06-03T21:22:27.315Z</lastmod>
+            <loc>https://https://berserkerlan.github.io/techblog//macos</loc>
+            <lastmod>2024-06-06T17:39:14.647Z</lastmod>
             <priority>0.5</priority>
         </url>
   </urlset>
