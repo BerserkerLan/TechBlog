@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
   import { fly } from 'svelte/transition'
   import { page } from '$app/stores'
+  import { base } from '$app/paths'
   import { browser } from '$app/environment'
   import { goto } from '$app/navigation'
   import { posts as storedPosts, tags as storedTags } from '$lib/stores/posts'
