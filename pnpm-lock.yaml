@@ -23,16 +23,16 @@ importers:
         version: 1.1.8
       '@sveltejs/adapter-netlify':
         specifier: ^2.0.8
-        version: 2.0.8(@sveltejs/kit@1.23.0)
+        version: 2.0.8(@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))
       '@sveltejs/adapter-static':
         specifier: ^2.0.3
-        version: 2.0.3(@sveltejs/kit@1.23.0)
+        version: 2.0.3(@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))
       '@sveltejs/adapter-vercel':
         specifier: ^2.4.3
-        version: 2.4.3(@sveltejs/kit@1.23.0)
+        version: 2.4.3(@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))
       '@sveltejs/kit':
         specifier: ^1.23.0
-        version: 1.23.0(svelte@4.2.0)(vite@4.4.9)
+        version: 1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
       '@tailwindcss/typography':
         specifier: ^0.5.9
         version: 0.5.9(tailwindcss@3.3.3)
@@ -44,7 +44,7 @@ importers:
         version: 3.0.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.4.1
-        version: 6.4.1(@typescript-eslint/parser@6.4.1)(eslint@8.48.0)(typescript@4.9.5)
+        version: 6.4.1(@typescript-eslint/parser@6.4.1(eslint@8.48.0)(typescript@4.9.5))(eslint@8.48.0)(typescript@4.9.5)
       '@typescript-eslint/parser':
         specifier: ^6.4.1
         version: 6.4.1(eslint@8.48.0)(typescript@4.9.5)
@@ -53,7 +53,7 @@ importers:
         version: 0.55.3
       '@vite-pwa/sveltekit':
         specifier: ^0.1.3
-        version: 0.1.3(@sveltejs/kit@1.23.0)(vite-plugin-pwa@0.14.7)
+        version: 0.1.3(@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))(vite-plugin-pwa@0.14.7(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))(workbox-build@6.6.0)(workbox-window@6.6.0))
       chalk:
         specifier: ^5.3.0
         version: 5.3.0
@@ -131,13 +131,13 @@ importers:
         version: 4.2.0
       svelte-check:
         specifier: ^3.5.0
-        version: 3.5.0(@babel/core@7.22.11)(postcss@8.4.28)(svelte@4.2.0)
+        version: 3.5.0(@babel/core@7.22.11)(postcss-load-config@4.0.1(postcss@8.4.28))(postcss@8.4.28)(svelte@4.2.0)
       svelte-eslint-parser:
         specifier: ^0.33.0
         version: 0.33.0(svelte@4.2.0)
       svelte-preprocess:
         specifier: ^5.0.4
-        version: 5.0.4(@babel/core@7.22.11)(postcss@8.4.28)(svelte@4.2.0)(typescript@4.9.5)
+        version: 5.0.4(@babel/core@7.22.11)(postcss-load-config@4.0.1(postcss@8.4.28))(postcss@8.4.28)(svelte@4.2.0)(typescript@4.9.5)
       sveltekit-embed:
         specifier: ^0.0.13
         version: 0.0.13(svelte@4.2.0)
@@ -155,16 +155,16 @@ importers:
         version: 4.1.2
       unocss:
         specifier: ^0.55.3
-        version: 0.55.3(postcss@8.4.28)(rollup@2.79.1)(vite@4.4.9)
+        version: 0.55.3(postcss@8.4.28)(rollup@2.79.1)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.5.7)
+        version: 4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)
       vite-imagetools:
         specifier: ^4.0.19
         version: 4.0.19(rollup@2.79.1)
       vite-plugin-pwa:
         specifier: ^0.14.7
-        version: 0.14.7(vite@4.4.9)(workbox-build@6.6.0)(workbox-window@6.6.0)
+        version: 0.14.7(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))(workbox-build@6.6.0)(workbox-window@6.6.0)
       workbox-build:
         specifier: ^6.6.0
         version: 6.6.0
@@ -4711,6 +4711,7 @@ snapshots:
     dependencies:
       '@rollup/pluginutils': 5.0.4(rollup@3.28.1)
       magic-string: 0.27.0
+    optionalDependencies:
       rollup: 3.28.1
 
   '@rollup/pluginutils@3.1.0(rollup@2.79.1)':
@@ -4730,6 +4731,7 @@ snapshots:
       '@types/estree': 1.0.1
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
       rollup: 2.79.1
 
   '@rollup/pluginutils@5.0.4(rollup@3.28.1)':
@@ -4737,6 +4739,7 @@ snapshots:
       '@types/estree': 1.0.1
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
       rollup: 3.28.1
 
   '@surma/rollup-plugin-off-main-thread@2.2.3':
@@ -4746,29 +4749,29 @@ snapshots:
       magic-string: 0.25.9
       string.prototype.matchall: 4.0.8
 
-  '@sveltejs/adapter-netlify@2.0.8(@sveltejs/kit@1.23.0)':
+  '@sveltejs/adapter-netlify@2.0.8(@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))':
     dependencies:
       '@iarna/toml': 2.2.5
-      '@sveltejs/kit': 1.23.0(svelte@4.2.0)(vite@4.4.9)
+      '@sveltejs/kit': 1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
       esbuild: 0.18.20
       set-cookie-parser: 2.6.0
 
-  '@sveltejs/adapter-static@2.0.3(@sveltejs/kit@1.23.0)':
+  '@sveltejs/adapter-static@2.0.3(@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))':
     dependencies:
-      '@sveltejs/kit': 1.23.0(svelte@4.2.0)(vite@4.4.9)
+      '@sveltejs/kit': 1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
 
-  '@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.23.0)':
+  '@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))':
     dependencies:
-      '@sveltejs/kit': 1.23.0(svelte@4.2.0)(vite@4.4.9)
+      '@sveltejs/kit': 1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
       '@vercel/nft': 0.22.6
       esbuild: 0.17.19
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9)':
+  '@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.2.0)(vite@4.4.9)
+      '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
       '@types/cookie': 0.5.1
       cookie: 0.5.0
       devalue: 4.3.2
@@ -4781,30 +4784,30 @@ snapshots:
       sirv: 2.0.3
       svelte: 4.2.0
       undici: 5.23.0
-      vite: 4.4.9(@types/node@20.5.7)
+      vite: 4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte-inspector@1.0.4(@sveltejs/vite-plugin-svelte@2.4.5)(svelte@4.2.0)(vite@4.4.9)':
+  '@sveltejs/vite-plugin-svelte-inspector@1.0.4(@sveltejs/vite-plugin-svelte@2.4.5(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.2.0)(vite@4.4.9)
+      '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
       debug: 4.3.4
       svelte: 4.2.0
-      vite: 4.4.9(@types/node@20.5.7)
+      vite: 4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@2.4.5(svelte@4.2.0)(vite@4.4.9)':
+  '@sveltejs/vite-plugin-svelte@2.4.5(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 1.0.4(@sveltejs/vite-plugin-svelte@2.4.5)(svelte@4.2.0)(vite@4.4.9)
+      '@sveltejs/vite-plugin-svelte-inspector': 1.0.4(@sveltejs/vite-plugin-svelte@2.4.5(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
       debug: 4.3.4
       deepmerge: 4.3.1
       kleur: 4.1.5
       magic-string: 0.30.3
       svelte: 4.2.0
       svelte-hmr: 0.15.3(svelte@4.2.0)
-      vite: 4.4.9(@types/node@20.5.7)
-      vitefu: 0.2.4(vite@4.4.9)
+      vite: 4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)
+      vitefu: 0.2.4(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
     transitivePeerDependencies:
       - supports-color
 
@@ -4854,7 +4857,7 @@ snapshots:
 
   '@types/unist@3.0.0': {}
 
-  '@typescript-eslint/eslint-plugin@6.4.1(@typescript-eslint/parser@6.4.1)(eslint@8.48.0)(typescript@4.9.5)':
+  '@typescript-eslint/eslint-plugin@6.4.1(@typescript-eslint/parser@6.4.1(eslint@8.48.0)(typescript@4.9.5))(eslint@8.48.0)(typescript@4.9.5)':
     dependencies:
       '@eslint-community/regexpp': 4.8.0
       '@typescript-eslint/parser': 6.4.1(eslint@8.48.0)(typescript@4.9.5)
@@ -4869,6 +4872,7 @@ snapshots:
       natural-compare: 1.4.0
       semver: 7.5.4
       ts-api-utils: 1.0.2(typescript@4.9.5)
+    optionalDependencies:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
@@ -4881,6 +4885,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 6.4.1
       debug: 4.3.4
       eslint: 8.48.0
+    optionalDependencies:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
@@ -4897,6 +4902,7 @@ snapshots:
       debug: 4.3.4
       eslint: 8.48.0
       ts-api-utils: 1.0.2(typescript@4.9.5)
+    optionalDependencies:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
@@ -4912,6 +4918,7 @@ snapshots:
       is-glob: 4.0.3
       semver: 7.5.4
       ts-api-utils: 1.0.2(typescript@4.9.5)
+    optionalDependencies:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
@@ -4955,12 +4962,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@unocss/astro@0.55.3(rollup@2.79.1)(vite@4.4.9)':
+  '@unocss/astro@0.55.3(rollup@2.79.1)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))':
     dependencies:
       '@unocss/core': 0.55.3
       '@unocss/reset': 0.55.3
-      '@unocss/vite': 0.55.3(rollup@2.79.1)(vite@4.4.9)
-      vite: 4.4.9(@types/node@20.5.7)
+      '@unocss/vite': 0.55.3(rollup@2.79.1)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
+    optionalDependencies:
+      vite: 4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)
     transitivePeerDependencies:
       - rollup
 
@@ -5076,7 +5084,7 @@ snapshots:
     dependencies:
       '@unocss/core': 0.55.3
 
-  '@unocss/vite@0.55.3(rollup@2.79.1)(vite@4.4.9)':
+  '@unocss/vite@0.55.3(rollup@2.79.1)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))':
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@rollup/pluginutils': 5.0.4(rollup@2.79.1)
@@ -5088,7 +5096,7 @@ snapshots:
       chokidar: 3.5.3
       fast-glob: 3.3.1
       magic-string: 0.30.3
-      vite: 4.4.9(@types/node@20.5.7)
+      vite: 4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)
     transitivePeerDependencies:
       - rollup
 
@@ -5109,10 +5117,10 @@ snapshots:
       - encoding
       - supports-color
 
-  '@vite-pwa/sveltekit@0.1.3(@sveltejs/kit@1.23.0)(vite-plugin-pwa@0.14.7)':
+  '@vite-pwa/sveltekit@0.1.3(@sveltejs/kit@1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)))(vite-plugin-pwa@0.14.7(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))(workbox-build@6.6.0)(workbox-window@6.6.0))':
     dependencies:
-      '@sveltejs/kit': 1.23.0(svelte@4.2.0)(vite@4.4.9)
-      vite-plugin-pwa: 0.14.7(vite@4.4.9)(workbox-build@6.6.0)(workbox-window@6.6.0)
+      '@sveltejs/kit': 1.23.0(svelte@4.2.0)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
+      vite-plugin-pwa: 0.14.7(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))(workbox-build@6.6.0)(workbox-window@6.6.0)
 
   abbrev@1.1.1: {}
 
@@ -5621,8 +5629,9 @@ snapshots:
       postcss-safe-parser: 6.0.0(postcss@8.4.28)
       postcss-selector-parser: 6.0.13
       semver: 7.5.4
-      svelte: 4.2.0
       svelte-eslint-parser: 0.33.0(svelte@4.2.0)
+    optionalDependencies:
+      svelte: 4.2.0
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -6670,14 +6679,16 @@ snapshots:
   postcss-load-config@3.1.4(postcss@8.4.28):
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.28
       yaml: 1.10.2
+    optionalDependencies:
+      postcss: 8.4.28
 
   postcss-load-config@4.0.1(postcss@8.4.28):
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.28
       yaml: 2.3.1
+    optionalDependencies:
+      postcss: 8.4.28
 
   postcss-nested@6.0.1(postcss@8.4.28):
     dependencies:
@@ -7155,7 +7166,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@3.5.0(@babel/core@7.22.11)(postcss@8.4.28)(svelte@4.2.0):
+  svelte-check@3.5.0(@babel/core@7.22.11)(postcss-load-config@4.0.1(postcss@8.4.28))(postcss@8.4.28)(svelte@4.2.0):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.19
       chokidar: 3.5.3
@@ -7164,7 +7175,7 @@ snapshots:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 4.2.0
-      svelte-preprocess: 5.0.4(@babel/core@7.22.11)(postcss@8.4.28)(svelte@4.2.0)(typescript@5.2.2)
+      svelte-preprocess: 5.0.4(@babel/core@7.22.11)(postcss-load-config@4.0.1(postcss@8.4.28))(postcss@8.4.28)(svelte@4.2.0)(typescript@5.2.2)
       typescript: 5.2.2
     transitivePeerDependencies:
       - '@babel/core'
@@ -7184,34 +7195,39 @@ snapshots:
       espree: 9.6.1
       postcss: 8.4.28
       postcss-scss: 4.0.7(postcss@8.4.28)
+    optionalDependencies:
       svelte: 4.2.0
 
   svelte-hmr@0.15.3(svelte@4.2.0):
     dependencies:
       svelte: 4.2.0
 
-  svelte-preprocess@5.0.4(@babel/core@7.22.11)(postcss@8.4.28)(svelte@4.2.0)(typescript@4.9.5):
+  svelte-preprocess@5.0.4(@babel/core@7.22.11)(postcss-load-config@4.0.1(postcss@8.4.28))(postcss@8.4.28)(svelte@4.2.0)(typescript@4.9.5):
     dependencies:
-      '@babel/core': 7.22.11
       '@types/pug': 2.0.6
       detect-indent: 6.1.0
       magic-string: 0.27.0
-      postcss: 8.4.28
       sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 4.2.0
+    optionalDependencies:
+      '@babel/core': 7.22.11
+      postcss: 8.4.28
+      postcss-load-config: 4.0.1(postcss@8.4.28)
       typescript: 4.9.5
 
-  svelte-preprocess@5.0.4(@babel/core@7.22.11)(postcss@8.4.28)(svelte@4.2.0)(typescript@5.2.2):
+  svelte-preprocess@5.0.4(@babel/core@7.22.11)(postcss-load-config@4.0.1(postcss@8.4.28))(postcss@8.4.28)(svelte@4.2.0)(typescript@5.2.2):
     dependencies:
-      '@babel/core': 7.22.11
       '@types/pug': 2.0.6
       detect-indent: 6.1.0
       magic-string: 0.27.0
-      postcss: 8.4.28
       sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 4.2.0
+    optionalDependencies:
+      '@babel/core': 7.22.11
+      postcss: 8.4.28
+      postcss-load-config: 4.0.1(postcss@8.4.28)
       typescript: 5.2.2
 
   svelte@4.2.0:
@@ -7448,9 +7464,9 @@ snapshots:
 
   universalify@2.0.0: {}
 
-  unocss@0.55.3(postcss@8.4.28)(rollup@2.79.1)(vite@4.4.9):
+  unocss@0.55.3(postcss@8.4.28)(rollup@2.79.1)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)):
     dependencies:
-      '@unocss/astro': 0.55.3(rollup@2.79.1)(vite@4.4.9)
+      '@unocss/astro': 0.55.3(rollup@2.79.1)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
       '@unocss/cli': 0.55.3(rollup@2.79.1)
       '@unocss/core': 0.55.3
       '@unocss/extractor-arbitrary-variants': 0.55.3
@@ -7469,8 +7485,9 @@ snapshots:
       '@unocss/transformer-compile-class': 0.55.3
       '@unocss/transformer-directives': 0.55.3
       '@unocss/transformer-variant-group': 0.55.3
-      '@unocss/vite': 0.55.3(rollup@2.79.1)(vite@4.4.9)
-      vite: 4.4.9(@types/node@20.5.7)
+      '@unocss/vite': 0.55.3(rollup@2.79.1)(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))
+    optionalDependencies:
+      vite: 4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -7526,31 +7543,33 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  vite-plugin-pwa@0.14.7(vite@4.4.9)(workbox-build@6.6.0)(workbox-window@6.6.0):
+  vite-plugin-pwa@0.14.7(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2))(workbox-build@6.6.0)(workbox-window@6.6.0):
     dependencies:
       '@rollup/plugin-replace': 5.0.2(rollup@3.28.1)
       debug: 4.3.4
       fast-glob: 3.3.1
       pretty-bytes: 6.1.1
       rollup: 3.28.1
-      vite: 4.4.9(@types/node@20.5.7)
+      vite: 4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)
       workbox-build: 6.6.0
       workbox-window: 6.6.0
     transitivePeerDependencies:
       - supports-color
 
-  vite@4.4.9(@types/node@20.5.7):
+  vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2):
     dependencies:
-      '@types/node': 20.5.7
       esbuild: 0.18.20
       postcss: 8.4.28
       rollup: 3.28.1
     optionalDependencies:
+      '@types/node': 20.5.7
       fsevents: 2.3.3
+      lightningcss: 1.21.7
+      terser: 5.19.2
 
-  vitefu@0.2.4(vite@4.4.9):
-    dependencies:
-      vite: 4.4.9(@types/node@20.5.7)
+  vitefu@0.2.4(vite@4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)):
+    optionalDependencies:
+      vite: 4.4.9(@types/node@20.5.7)(lightningcss@1.21.7)(terser@5.19.2)
 
   vscode-oniguruma@1.7.0: {}
 
