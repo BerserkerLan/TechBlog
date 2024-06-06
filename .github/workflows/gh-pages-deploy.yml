@@ -12,4 +12,4 @@ jobs:
       contents: write
     with:
       publish_dir: build
-      cname: 'berserkerlan.github.io/techblog/'
+      cname: 'berserkerlan.github.io'
