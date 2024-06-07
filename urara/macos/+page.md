@@ -1,7 +1,7 @@
 ---
 title: Why MacOS is still behind - 10 ways it could improve
-summary: We go over the things MacOS still doesn't implement properly, and go over what these are and how they can be improved
-created: 2023-12-08
+summary: We go over the features MacOS still doesn't have and how they could improve by implementing them
+created: 2024-05-08
 image: './mac_os.jpg'
 tags: ['Apple', 'MacOS']
 ---
