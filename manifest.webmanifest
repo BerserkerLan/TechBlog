@@ -3,7 +3,7 @@
   "short_name": "Rusab Tech Blog",
   "lang": "en-US",
   "description": "A tech blog for personal opinions and articles",
-  "id": "https://https://berserkerlan.github.io/techblog//",
+  "id": "https://https://berserkerlan.github.io/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -12,13 +12,13 @@
   "theme_color": "#3D4451",
   "icons": [
     {
-      "src": "https://https://berserkerlan.github.io/techblog//assets/any@192.png",
+      "src": "https://https://berserkerlan.github.io/assets/any@192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://https://berserkerlan.github.io/techblog//assets/any@512.png",
+      "src": "https://https://berserkerlan.github.io/assets/any@512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
